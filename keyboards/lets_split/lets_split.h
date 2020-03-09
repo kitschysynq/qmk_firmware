@@ -2,6 +2,8 @@
 
 #include "quantum.h"
 
+#define FLIP_HALF
+
 #ifdef KEYBOARD_lets_split_rev1
     #include "rev1.h"
 #elif KEYBOARD_lets_split_rev2
