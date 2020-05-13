@@ -11,6 +11,12 @@
 #elif KEYBOARD_lets_split_sockets
     #include "sockets.h"
 #endif
+#ifdef KEYBOARD_lets_split_vanilla
+    #include "vanilla.h"
+#endif
+#ifdef KEYBOARD_lets_split_naked_led
+    #include "naked_led.h"
+#endif
 
 
 // Used to create a keymap using only KC_ prefixed keys

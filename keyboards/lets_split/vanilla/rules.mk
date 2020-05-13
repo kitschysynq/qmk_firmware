@@ -35,4 +35,3 @@ SPLIT_KEYBOARD = yes
 
 LAYOUTS = ortho_4x12
 
-

@@ -19,11 +19,12 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #pragma once
 
 /* USB Device descriptor parameter */
-#define VENDOR_ID       0x6F77
-#define PRODUCT_ID      0x0002
-#define DEVICE_VER      0x0002
+#define VENDOR_ID       0xFEED
+#define PRODUCT_ID      0x3060
+#define DEVICE_VER      0x0001
 #define MANUFACTURER    Wootpatoot
 #define PRODUCT         Lets Split v2
+#define DESCRIPTION     A split keyboard for the cheap makers
 
 /* key matrix size */
 // Rows are doubled-up
@@ -31,9 +32,10 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define MATRIX_COLS 6
 
 // wiring of each half
-#define MATRIX_ROW_PINS { D7, E6, B4, B5 }
-//#define MATRIX_COL_PINS { F6, F7, B1, B3, B2, B6 }
-#define MATRIX_COL_PINS { B6, B2, B3, B1, F7, F6 } //uncomment this line and comment line above if you need to reverse left-to-right key order
+//#define MATRIX_ROW_PINS { D7, E6, B4, B5 }
+#define MATRIX_ROW_PINS { B5, B4, E6, D7 }
+#define MATRIX_COL_PINS { F6, F7, B1, B3, B2, B6 }
+//#define MATRIX_COL_PINS { B6, B2, B3, B1, F7, F6 } //uncomment this line and comment line above if you need to reverse left-to-right key order
 
 #define DIODE_DIRECTION COL2ROW
 
@@ -41,7 +43,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 //#define MATRIX_HAS_GHOST
 
 /* number of backlight levels */
-#define BACKLIGHT_LEVELS 3
+//#define BACKLIGHT_LEVELS 3
 
 /* Set 0 if debouncing isn't needed */
 #define DEBOUNCE 5
@@ -51,15 +53,15 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 /* Locking resynchronize hack */
 #define LOCKING_RESYNC_ENABLE
 
-#define LED_DRIVER_ADDR_1 0x74
+//#define LED_DRIVER_ADDR_1 0x74
 //#define LED_DRIVER_ADDR_2 0x75
 
 // #define LED_DRIVER_COUNT 2
 // #define LED_DRIVER_1_LED_COUNT 24
 // #define LED_DRIVER_2_LED_COUNT 24
 // #define LED_DRIVER_LED_COUNT LED_DRIVER_1_LED_COUNT + LED_DRIVER_2_LED_COUNT
-#define LED_DRIVER_COUNT 1
-#define LED_DRIVER_LED_COUNT 24
+//#define LED_DRIVER_COUNT 1
+//#define LED_DRIVER_LED_COUNT 24
 
 /*
  * Feature disable options
