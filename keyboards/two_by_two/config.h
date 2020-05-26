@@ -20,24 +20,23 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 /* USB Device descriptor parameter */
 #define VENDOR_ID       0xFEED
-#define PRODUCT_ID      0x3060
+#define PRODUCT_ID      0x3061
 #define DEVICE_VER      0x0001
 #define MANUFACTURER    FlyBirdman
-#define PRODUCT         HandWiredOLKB
-#define DESCRIPTION     A hand-wired planck-like
+#define PRODUCT         TwoByTwo
+#define DESCRIPTION     A tiny macro pad
 
 /* key matrix size */
 // Rows are doubled-up
-#define MATRIX_ROWS 4
-#define MATRIX_COLS 12
+#define MATRIX_ROWS 2
+#define MATRIX_COLS 2
 
 // wiring of each half
-#define MATRIX_ROW_PINS { D7, E6, B4, B5 }
-#define MATRIX_COL_PINS { C6, D4, D0, D1, F4, F5, F6, F7, B1, B3, B2, B6 }
+#define MATRIX_ROW_PINS { D7, E6 }
+#define MATRIX_COL_PINS { F6, F5 }
 // #define MATRIX_COL_PINS { B6, B2, B3, B1, F7, F6 } //uncomment this line and comment line above if you need to reverse left-to-right key order
 
-//#define DIODE_DIRECTION COL2ROW
-#define DIODE_DIRECTION ROW2COL
+#define DIODE_DIRECTION COL2ROW
 
 /* define if matrix has ghost */
 //#define MATRIX_HAS_GHOST
