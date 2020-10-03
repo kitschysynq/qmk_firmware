@@ -59,7 +59,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 //#undef RGBLED_NUM
 #ifdef RGB_MATRIX_ENABLE
 #define RGB_MATRIX_KEYPRESSES
-#define DRIVER_LED_TOTAL 48
+#define DRIVER_LED_TOTAL 24
 #endif
 
 
