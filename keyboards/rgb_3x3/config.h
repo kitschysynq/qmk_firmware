@@ -32,12 +32,12 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 /* key matrix size */
 // Rows are doubled-up
-#define MATRIX_ROWS 2
-#define MATRIX_COLS 2
+#define MATRIX_ROWS 3
+#define MATRIX_COLS 3
 
 // wiring of each half
-#define MATRIX_ROW_PINS { D7, E6 }
-#define MATRIX_COL_PINS { B1, F7 }
+#define MATRIX_ROW_PINS { B5, B4, E6 }
+#define MATRIX_COL_PINS { B1, B3, B2 }
 // #define MATRIX_COL_PINS { B6, B2, B3, B1, F7, F6 } //uncomment this line and comment line above if you need to reverse left-to-right key order
 
 #define DIODE_DIRECTION COL2ROW
@@ -49,13 +49,22 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 // #define BACKLIGHT_LEVELS 3
 
 //#undef RGBLED_NUM
-#define RGBLED_NUM 4
-#define RGB_DI_PIN B5
+#ifdef RGB_MATRIX_ENABLE
+#define RGB_MATRIX_KEYPRESSES
+#define DRIVER_LED_TOTAL 9
+#endif
+
+
+#define RGB_DI_PIN B6
+
+#ifdef RGBLIGHT_ENABLE
+#define RGBLED_NUM 9
 #define RGBLIGHT_ANIMATIONS
 #define RGBLIGHT_HUE_STEP 8
 #define RGBLIGHT_SAT_STEP 8
 #define RGBLIGHT_VAL_STEP 8
 #define RGBLIGHT_SLEEP
+#endif
 
 // #define RGBLIGHT_HUE_STEP 5    // How much each press of rgb_hue changes hue
 // #define RGBLIGHT_SAT_STEP 10   // How much each press of rgb_sat changes sat

@@ -24,23 +24,31 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 /* USB Device descriptor parameter */
 #define VENDOR_ID       0xFEED
-#define PRODUCT_ID      0x3061
+#define PRODUCT_ID      0x3060
 #define DEVICE_VER      0x0001
-#define MANUFACTURER    FlyBirdman
-#define PRODUCT         TwoByTwo
-#define DESCRIPTION     A tiny macro pad
+#define MANUFACTURER    Wootpatoot
+#define PRODUCT         RGB Split
+#define DESCRIPTION     Blinkenlights
 
 /* key matrix size */
 // Rows are doubled-up
-#define MATRIX_ROWS 2
-#define MATRIX_COLS 2
+#define MATRIX_ROWS 8
+#define MATRIX_COLS 6
 
 // wiring of each half
-#define MATRIX_ROW_PINS { D7, E6 }
-#define MATRIX_COL_PINS { B1, F7 }
+#define MATRIX_ROW_PINS { D7, E6, B4, B5 }
+//#define MATRIX_ROW_PINS { B5, B4, E6, D7 }
+#define MATRIX_COL_PINS { F6, F7, B1, B3, B2, B6 }
 // #define MATRIX_COL_PINS { B6, B2, B3, B1, F7, F6 } //uncomment this line and comment line above if you need to reverse left-to-right key order
 
 #define DIODE_DIRECTION COL2ROW
+
+#define USE_I2C
+
+/* Select hand configuration */
+#define MASTER_LEFT
+// #define MASTER_RIGHT
+// #define EE_HANDS
 
 /* define if matrix has ghost */
 //#define MATRIX_HAS_GHOST
@@ -49,13 +57,22 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 // #define BACKLIGHT_LEVELS 3
 
 //#undef RGBLED_NUM
-#define RGBLED_NUM 4
-#define RGB_DI_PIN B5
+#ifdef RGB_MATRIX_ENABLE
+#define RGB_MATRIX_KEYPRESSES
+#define DRIVER_LED_TOTAL 48
+#endif
+
+
+#define RGB_DI_PIN F5
+
+#ifdef RGBLIGHT_ENABLE
+#define RGBLED_NUM 9
 #define RGBLIGHT_ANIMATIONS
 #define RGBLIGHT_HUE_STEP 8
 #define RGBLIGHT_SAT_STEP 8
 #define RGBLIGHT_VAL_STEP 8
 #define RGBLIGHT_SLEEP
+#endif
 
 // #define RGBLIGHT_HUE_STEP 5    // How much each press of rgb_hue changes hue
 // #define RGBLIGHT_SAT_STEP 10   // How much each press of rgb_sat changes sat

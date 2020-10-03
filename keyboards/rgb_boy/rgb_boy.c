@@ -3,8 +3,8 @@
 void matrix_init_kb(void) {
 	 rgblight_enable();
 	 //rgblight_mode(RGBLIGHT_MODE_RGB_TEST);
-	 rgblight_mode(RGBLIGHT_MODE_RAINBOW_SWIRL);
-	// rgblight_sethsv(HSV_MAGENTA); 
+	 //rgblight_mode(RGBLIGHT_MODE_RAINBOW_SWIRL);
+	 rgblight_sethsv(HSV_MAGENTA); 
 	// rgblight_mode(RGBLIGHT_MODE_BREATHING);
     // // green led on
     // DDRD |= (1<<5);
