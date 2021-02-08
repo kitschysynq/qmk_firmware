@@ -29,6 +29,9 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 /* Use I2C or Serial, not both */
 // #define USE_SERIAL
 #define USE_I2C
+#define IGNORE_MOD_TAP_INTERRUPT
+// 200 is default
+#define TAPPING_TERM 200
 
 /* Select hand configuration */
 #define MASTER_LEFT

@@ -16,33 +16,36 @@
 #pragma once
 #include "config_common.h"
 
+#define TAPPING_TERM 200
+
 /* USB Device descriptor parameter */
-#define VENDOR_ID       0xFEED
-#define PRODUCT_ID      0xACC8
-#define DEVICE_VER      0x0001
-#define MANUFACTURER    Broekhuijsen
-#define PRODUCT         Uno
+#define VENDOR_ID 0xFEED
+#define PRODUCT_ID 0xACC8
+#define DEVICE_VER 0x0001
+#define MANUFACTURER Broekhuijsen
+#define PRODUCT Uno
 
 /* key matrix size */
 #define MATRIX_ROWS 1
 #define MATRIX_COLS 1
 
 /* Uno default pinout */
-#define DIRECT_PINS { \
-    { B6 } \
-}
+#define DIRECT_PINS \
+    {               \
+        { B6 }      \
+    }
 #define UNUSED_PINS
 
 #define RGB_DI_PIN F6
 #ifdef RGB_DI_PIN
-#define RGBLED_NUM 1
+#    define RGBLED_NUM 1
 //   #define RGBLIGHT_HUE_STEP 32
 //   #define RGBLIGHT_SAT_STEP 32
 //   #define RGBLIGHT_VAL_STEP 32
 //   #define RGBLIGHT_LIMIT_VAL 255 /* The maximum brightness level */
 //   #define RGBLIGHT_SLEEP  /* If defined, the RGB lighting will be switched off when the host goes to sleep */
 // /*== all animations enable ==*/
-#define RGBLIGHT_ANIMATIONS
+#    define RGBLIGHT_ANIMATIONS
 // /*== or choose animations ==*/
 //   #define RGBLIGHT_EFFECT_BREATHING
 //   #define RGBLIGHT_EFFECT_RAINBOW_MOOD
