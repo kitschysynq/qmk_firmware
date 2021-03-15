@@ -28,6 +28,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define TAPPING_TERM 200
 // set in keymap get_tapping_term
 #define TAPPING_TERM_PER_KEY
+#define IGNORE_MOD_TAP_INTERRUPT_PER_KEY
 
 // Selection of RGBLIGHT MODE to use.
 #if defined(LED_ANIMATIONS)

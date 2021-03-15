@@ -12,9 +12,8 @@
 #endif
 #endif
 
-#ifndef FLIP_HALF
-// Standard Keymap
-// (TRRS jack on the left half is to the right, TRRS jack on the right half is to the left)
+#ifdef FLIP_HALF
+// Keymap with right side flipped
 #define LAYOUT( \
 	L00, L01, L02, L03, L04, L05, R00, R01, R02, R03, R04, R05, \
 	L10, L11, L12, L13, L14, L15, R10, R11, R12, R13, R14, R15, \
@@ -32,8 +31,8 @@
 		{ R35, R34, R33, R32, R31, R30 } \
 	}
 #else
-// Keymap with right side flipped
-// (TRRS jack on both halves are to the right)
+
+// Standard Keymap
 #define LAYOUT( \
 	L00, L01, L02, L03, L04, L05, R00, R01, R02, R03, R04, R05, \
 	L10, L11, L12, L13, L14, L15, R10, R11, R12, R13, R14, R15, \

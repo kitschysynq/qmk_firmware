@@ -20,16 +20,14 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 #pragma once
 
- // place overrides here
-#define DEFAULT_LAYER_SONGS { SONG(QWERTY_SOUND), \
-                              SONG(COLEMAK_SOUND), \
-                              SONG(DVORAK_SOUND) \
-                            }
+// place overrides here
 
 /* Use I2C or Serial, not both */
 // #define USE_SERIAL
 #define USE_I2C
-#define IGNORE_MOD_TAP_INTERRUPT
+//#define IGNORE_MOD_TAP_INTERRUPT
+#define IGNORE_MOD_TAP_INTERRUPT_PER_KEY
+#define TAPPING_TERM_PER_KEY
 // 200 is default
 #define TAPPING_TERM 200
 
