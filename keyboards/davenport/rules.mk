@@ -23,4 +23,6 @@ AUDIO_ENABLE = no           # Audio output
 CUSTOM_MATRIX = lite
 SRC += matrix.c
 
+LED_MATRIX_ENABLE = IS31FL3731
+
 LAYOUTS = fullsize_ansi

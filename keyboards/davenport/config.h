@@ -26,6 +26,11 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define MANUFACTURER    Evyd13
 #define PRODUCT         Wasdat
 
+#define BACKLIGHT_LEVELS 3
+#define LED_DRIVER_ADDR_1 0x74
+#define LED_DRIVER_COUNT 1
+#define LED_DRIVER_LED_COUNT 24
+
 /* key matrix size */
 #define MATRIX_ROWS 8
 #define MATRIX_COLS 16
