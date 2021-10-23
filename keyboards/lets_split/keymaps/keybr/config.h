@@ -23,9 +23,9 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 // place overrides here
 
 /* Use I2C or Serial, not both */
-#define USE_SERIAL
+// #define USE_SERIAL
 #define FLIP_HALF
-//#define USE_I2C
+#define USE_I2C
 #define IGNORE_MOD_TAP_INTERRUPT
 #define IGNORE_MOD_TAP_INTERRUPT_PER_KEY
 #define TAPPING_TERM_PER_KEY

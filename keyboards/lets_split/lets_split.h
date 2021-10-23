@@ -8,6 +8,8 @@
     #include "rev2.h"
 #elif KEYBOARD_lets_split_sockets
     #include "sockets.h"
+#elif KEYBOARD_lets_split_naked_led
+    #include "naked_led.h"
 #endif
 
 
