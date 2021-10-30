@@ -25,10 +25,10 @@ enum custom_keycodes {
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 [_QWERTY] = LAYOUT_ortho_4x12(\
-  BL_TOGG,       KC_Q,         KC_W,           KC_E,           KC_R,               KC_T,               KC_Y,               KC_U,         KC_I,         KC_O,         KC_P,         KC_BSPC,    \
+  KC_ESC,       KC_Q,         KC_W,           KC_E,           KC_R,               KC_T,               KC_Y,               KC_U,         KC_I,         KC_O,         KC_P,         KC_BSPC,    \
   KC_TAB,       LCTL_T(KC_A), LALT_T(KC_S), LSFT_T(KC_D),     LGUI_T(KC_F),       KC_G,               KC_H,               LGUI_T(KC_J), RSFT_T(KC_K), RALT_T(KC_L), RCTL_T(KC_SCLN),KC_QUOT,  \
   KC_LSFT,      KC_Z,         KC_X,           KC_C,           KC_V,               KC_B,               KC_N,               KC_M,         KC_COMM,      KC_DOT,       RSFT_T(KC_SLSH),KC_ENT,   \
-  KC_MPLY,      KC_LCTL,      KC_LALT,        KC_LGUI,        LT(LOWER,KC_ESC),   LT(ARROW, KC_SPC),  LT(ARROW, KC_SPC),  RAISE,        KC_LEFT,      KC_DOWN,      KC_UP,          KC_RGHT    \
+  KC_MPLY,      KC_LCTL,      KC_LALT,        KC_LGUI,        LT(LOWER,KC_DEL),   LT(ARROW, KC_BSPC),  LT(ARROW, KC_SPC),  LT(RAISE, KC_DEL),        KC_LEFT,      KC_DOWN,      KC_UP,          KC_RGHT    \
 ),
 
 [_LOWER] = LAYOUT_ortho_4x12( \
@@ -63,9 +63,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
 bool get_ignore_mod_tap_interrupt(uint16_t keycode, keyrecord_t *record) {
     switch (keycode) {
-        case LT(LOWER, KC_ESC):
+        case LT(LOWER,KC_DEL):
             return false;
-        case RAISE:
+        case LT(RAISE, KC_DEL):
             return false;
         default:
             return true;
