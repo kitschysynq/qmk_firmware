@@ -10,6 +10,8 @@
     #include "sockets.h"
 #elif KEYBOARD_lets_split_naked_led
     #include "naked_led.h"
+#elif KEYBOARD_lets_split_vanilla
+    #include "vanilla.h"
 #endif
 
 

@@ -20,20 +20,20 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #include "config_common.h"
 
 /* USB Device descriptor parameter */
-#define VENDOR_ID       0x4705
-#define PRODUCT_ID      0xC474
+#define VENDOR_ID       0xD00D
+#define PRODUCT_ID      0x1010
 #define DEVICE_VER      0x0001
-#define MANUFACTURER    Evyd13
-#define PRODUCT         Wasdat
+#define MANUFACTURER    Spacefaring Industries
+#define PRODUCT         Davenport
 
-#define BACKLIGHT_LEVELS 3
-#define LED_DRIVER_ADDR_1 0x74
-#define LED_DRIVER_COUNT 1
-#define LED_DRIVER_LED_COUNT 24
+// #define BACKLIGHT_LEVELS 3
+// #define LED_DRIVER_ADDR_1 0x74
+// #define LED_DRIVER_COUNT 1
+// #define LED_DRIVER_LED_COUNT 108
 
 /* key matrix size */
-#define MATRIX_ROWS 8
-#define MATRIX_COLS 16
+#define MATRIX_ROWS 12
+#define MATRIX_COLS 10
 
 /*
  * Keyboard Matrix Assignments
@@ -45,27 +45,24 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
  *                  ROW2COL = ROW = Anode (+), COL = Cathode (-, marked on diode)
  *
 */
-#define MATRIX_ROW_PINS { D6, D4, F6, F7, F4, F5, F0, F1 }
-#define MATRIX_COL_PINS { }
+#define MATRIX_ROW_PINS { B0, F4, F5, F6, F7, B1, D4, C6, D7, E6, B4, B5 }
+#define MATRIX_COL_PINS { B7, D5, C7, F1, F0, D2, D3, B6, B2, B3 }
 #define UNUSED_PINS
 
 /* COL2ROW, ROW2COL*/
 #define DIODE_DIRECTION ROW2COL
 
-// For QMK DFU
-#define QMK_ESC_OUTPUT D6
-#define QMK_ESC_INPUT D7
-#define QMK_LED B0
+
 
 /*
  * Split Keyboard specific options, make sure you have 'SPLIT_KEYBOARD = yes' in your rules.mk, and define SOFT_SERIAL_PIN.
  */
 //#define SOFT_SERIAL_PIN D0 // or D1, D2, D3, E6
 
-#define LED_NUM_LOCK_PIN B2
-#define LED_CAPS_LOCK_PIN B0
-#define LED_SCROLL_LOCK_PIN B1
-#define LED_PIN_ON_STATE 0
+// #define LED_NUM_LOCK_PIN B2
+// #define LED_CAPS_LOCK_PIN B0
+// #define LED_SCROLL_LOCK_PIN B1
+// #define LED_PIN_ON_STATE 0
 
 // #define BACKLIGHT_PIN B7
 // #define BACKLIGHT_BREATHING

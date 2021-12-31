@@ -16,14 +16,13 @@ COMMAND_ENABLE = no         # Commands for debug and configuration
 SLEEP_LED_ENABLE = no       # Breathing sleep LED during USB suspend
 # if this doesn't work, see here: https://github.com/tmk/tmk_keyboard/wiki/FAQ#nkro-doesnt-work
 NKRO_ENABLE = yes           # USB Nkey Rollover
-BACKLIGHT_ENABLE = yes       # Enable keyboard backlight functionality
+
 RGBLIGHT_ENABLE = no        # Enable keyboard RGB underglow
 AUDIO_ENABLE = no           # Audio output
 
 CUSTOM_MATRIX = lite
 SRC += matrix.c
 
-LED_MATRIX_ENABLE = yes
-LED_MATRIX_DRIVER = IS31FL3731
-
-LAYOUTS = fullsize_ansi
+BACKLIGHT_ENABLE = no       # Enable keyboard backlight functionality
+# LED_MATRIX_ENABLE = yes
+# LED_MATRIX_DRIVER = IS31FL3731
