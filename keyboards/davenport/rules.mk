@@ -24,5 +24,5 @@ CUSTOM_MATRIX = lite
 SRC += matrix.c
 
 BACKLIGHT_ENABLE = no       # Enable keyboard backlight functionality
-# LED_MATRIX_ENABLE = yes
-# LED_MATRIX_DRIVER = IS31FL3731
+LED_MATRIX_ENABLE = yes
+LED_MATRIX_DRIVER = IS31FL3731
