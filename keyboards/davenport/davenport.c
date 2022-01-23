@@ -28,7 +28,7 @@ const is31_led __flash g_is31_leds[DRIVER_LED_TOTAL] = {
     {0, C1_3},  {0, C3_2},  {0, C6_8},  {0, C7_4},  {0, C9_2},  {0, C8_1},  {0, C6_3},  {0, C5_4},  {0, C7_2},  {0, C9_1},  {0, C8_3},  {0, C6_5},  {0, C4_6},  {0, C2_8},       {0, C1_7},  {0, C3_5},  {0, C4_4},       {0, C2_6},  {0, C1_8},  {0, C3_7},  {0, C5_5}, \
     {0, C5_16}, {0, C1_12}, {0, C3_9},  {0, C5_11}, {0, C7_13}, {0, C9_15}, {0, C9_16}, {0, C8_14}, {0, C6_12}, {0, C4_10}, {0, C2_9},  {0, C1_10},             {0, C3_12},                                               {0, C6_15}, {0, C4_13}, {0, C2_11}, \
     {0, C5_9},              {0, C5_10}, {0, C7_9},  {0, C9_11}, {0, C8_13}, {0, C7_14}, {0, C9_12}, {0, C8_10}, {0, C6_9},  {0, C4_11}, {0, C2_12},             {0, C1_14},                  {0, C5_15},                  {0, C4_16}, {0, C2_15}, {0, C1_13}, {0, C3_11}, \
-    {0, C1_11}, {0, C3_10}, {0, C6_16},                                     {0, C3_13},                                     {0, C3_11}, {0, C6_13}, {0, C4_14}, {0, C2_16},      {0, C1_15}, {0, C3_13}, {0, C4_12},      {0, C2_14},             {0, C3_15}\
+    {0, C1_11}, {0, C3_10}, {0, C6_16},                                     {0, C6_11},                                     {0, C8_11}, {0, C6_13}, {0, C4_14}, {0, C2_16},      {0, C1_15}, {0, C3_13}, {0, C4_12},      {0, C2_14},             {0, C3_15}\
 };
 #define NO NO_LED
 #define LED LED_FLAG_KEYLIGHT
@@ -64,7 +64,7 @@ led_config_t g_led_config = {
     LED, LED, LED, LED, LED, LED, LED, LED, LED, LED, LED, LED, LED, LED,     LED, LED, LED,     LED, LED, LED, LED, \
     LED, LED, LED, LED, LED, LED, LED, LED, LED, LED, LED, LED, LED, LED,     LED, LED, LED,     LED, LED, LED, LED, \
     LED, LED, LED, LED, LED, LED, LED, LED, LED, LED, LED, LED,      LED,                        LED, LED, LED,      \
-    LED,      LED, LED, LED, LED, LED, LED, LED, LED, LED,           LED,          LED,          LED, LED, LED, LED, \
+    LED, LED, LED, LED, LED, LED, LED, LED, LED, LED, LED,           LED,          LED,          LED, LED, LED, LED, \
     LED, LED, LED,                LED,                LED, LED, LED, LED,     LED, LED, LED,     LED,      LED      \
 
   }

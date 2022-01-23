@@ -13,9 +13,10 @@ LTO_ENABLE = no  # if firmware size over limit, try this option
  HELIX_ROWS = 5              # Helix Rows is 4 or 5
 # OLED_ENABLE = no            # OLED_ENABLE
 # LOCAL_GLCDFONT = no         # use each keymaps "helixfont.h" insted of "common/glcdfont.c"
- LED_BACK_ENABLE = yes        # LED backlight (Enable WS2812 RGB underlight.)
+LED_BACK_ENABLE = yes        # LED backlight (Enable WS2812 RGB underlight.)
+LED_ANIMATIONS = yes
 # LED_UNDERGLOW_ENABLE = no   # LED underglow (Enable WS2812 RGB underlight.)
- LED_ANIMATIONS = yes        # LED animations
+
 # IOS_DEVICE_ENABLE = no      # connect to IOS device (iPad,iPhone)
 
 # convert Helix-specific options (that represent combinations of standard options)
