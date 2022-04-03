@@ -64,9 +64,6 @@
 //   #define RGBLIGHT_EFFECT_BREATHE_MAX    255   // 0 to 255
 #endif
 
-/* Debounce reduces chatter (unintended double-presses) - set 0 if debouncing is not needed */
-#define DEBOUNCE 5
+#include "config_common.h"
 
-/* disable these deprecated features by default */
-#define NO_ACTION_MACRO
-#define NO_ACTION_FUNCTION
+// See rev1/config.h and rev2/config.h to configure your uno.

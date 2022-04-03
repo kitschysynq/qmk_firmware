@@ -59,6 +59,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 // #define LED_DRIVER_1_LED_COUNT 24
 // #define LED_DRIVER_2_LED_COUNT 24
 // #define LED_DRIVER_LED_COUNT LED_DRIVER_1_LED_COUNT + LED_DRIVER_2_LED_COUNT
+#define DRIVER_LED_TOTAL 24
 #define LED_DRIVER_COUNT 1
 #define LED_DRIVER_LED_COUNT 24
 
