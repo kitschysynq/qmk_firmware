@@ -1,5 +1,5 @@
 #include "rgb_split.h"
-#include "rgblight_list.h"
+//#include "rgblight_list.h"
 
 void matrix_init_kb(void) {
      //rgblight_enable();
@@ -16,7 +16,9 @@ void matrix_init_kb(void) {
     // DDRB |= (1<<0);
     // PORTB &= ~(1<<0);
     rgb_matrix_enable();
-    rgb_matrix_mode(RGB_MATRIX_SOLID_REACTIVE_MULTIWIDE);
+    // rgb_matrix_mode(RGB_MATRIX_SOLID_REACTIVE_MULTIWIDE);
+    rgb_matrix_mode(36);
+    //rgb_matrix_mode(5);
 
     matrix_init_user();
 };

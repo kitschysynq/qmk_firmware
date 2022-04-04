@@ -63,15 +63,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
 bool get_ignore_mod_tap_interrupt(uint16_t keycode, keyrecord_t *record) {
     switch (keycode) {
-<<<<<<< HEAD
         case LT(LOWER, KC_ESC):
             return false;
         case RAISE:
-=======
-        case LT(LOWER,KC_DEL):
-            return false;
-        case LT(RAISE, KC_DEL):
->>>>>>> master
             return false;
         default:
             return true;
